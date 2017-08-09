@@ -135,7 +135,7 @@ module.exports = MapWrapper;
 
 var CountryView = __webpack_require__(0);
 var MapWrapper = __webpack_require__(1);
-var center = {lat: 51.512245, lng: -0.127417};
+var center = {lat: 30.512245, lng: -0.127417};
 
 
 

@@ -8,38 +8,61 @@
   <script src="https://maps.googleapis.com/maps/api/js?&libraries=places"></script>
 </head>
 
- 
+  
 <body>
+
+ <div class="header">
+   <div class="inside">
+    <div class="logo">
+      <h1 class="h1"><a href="#"">My Travel Bucket List</h1>
+    </div>
+    <div class="nav">
+      <ul>
+        <li class="list"><a href="#">About Us</a></li>
+        <li class="list"><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
    <div class="container">
      <form action="/countries" method="POST">
-  <input type="text" placeholder="Select Country" id="country-search" name="name">
+  <input type="text" placeholder="Select Destination" id="country-search" name="name">
   <input id="lat" name="lat" type="hidden"></input>
   <input id="lng" name="lng" type="hidden"></input>
-  <!-- <input type="text" placeholder="quote" name="quote"> -->
-  <button type="submit">Submit</button>
+  <button type="submit">Add to Basket!</button>
 </form>
+  <form action="/delete" method="POST">
+    <button id="deleteLastButton" type="submit">Delete Last</button>
+    <form action="/delete" method="POST">
+      <button id="deleteAllButton" type="submit">Delete All</button>
+    </form>
+  </div>
 
 
 
-<form action="/delete" method="POST">
-<button id="deleteButton" type="submit">Delete All</button>
-</form>
-</div>
+  <div class="content">
 
-
-<div class="list-container">
-<ul id="countries">
-</ul>
-</div>
+     <div class="list-container">
+        <ul id="countries">
+        </ul>
+     </div>
 
 
 
-<div class="map_container">
-<div id="main-map"></div>
-</div>
+     <div class="map_container">
+        <div id="main-map"></div>
+     </div>
 
 
-</body>
+     <div id="footer">
+    My Travel Bucket List, Copyright © 2017. All rights reserved.
+     </div>
 
+
+     </div>
+
+  </body>
 
 </html>

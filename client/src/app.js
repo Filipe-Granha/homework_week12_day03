@@ -1,6 +1,6 @@
 var CountryView = require('./views/countryView');
 var MapWrapper = require('./views/mapWrapper');
-var center = {lat: 51.512245, lng: -0.127417};
+var center = {lat: 30.512245, lng: -0.127417};
 
 
 
