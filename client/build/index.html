@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bucket List</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="bundle.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?&libraries=places"></script>
+</head>
+
+ 
+<body>
+   <div class="container">
+     <form action="/countries" method="POST">
+  <input type="text" placeholder="Select Country" id="country-search" name="name">
+  <input id="lat" name="lat" type="hidden"></input>
+  <input id="lng" name="lng" type="hidden"></input>
+  <!-- <input type="text" placeholder="quote" name="quote"> -->
+  <button type="submit">Submit</button>
+</form>
+
+
+
+<form action="/delete" method="POST">
+<button id="deleteButton" type="submit">Delete All</button>
+</form>
+</div>
+
+
+<div class="list-container">
+<ul id="countries">
+</ul>
+</div>
+
+
+
+<div class="map_container">
+<div id="main-map"></div>
+</div>
+
+
+</body>
+
+
+</html>
